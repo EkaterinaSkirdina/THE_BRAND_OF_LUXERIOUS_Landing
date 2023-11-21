@@ -51,7 +51,6 @@ a {
   left: -9999999px;
 }
 .header__checkbox:checked ~ .menu-list {
-  visibility: visible;
   right: 0;
 }
 
@@ -66,6 +65,7 @@ a {
 .menu-list {
   position: absolute;
   top: 80px;
+  right: -232px;
   z-index: 1;
   transition: right 0.6s;
   width: 232px;
@@ -73,7 +73,6 @@ a {
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   padding: 32px;
   box-sizing: border-box;
-  visibility: hidden;
 }
 .menu-list__title {
   display: inline-block;
