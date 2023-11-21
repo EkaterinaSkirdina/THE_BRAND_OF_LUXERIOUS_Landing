@@ -521,6 +521,7 @@ a {
 
         &:hover {
             background-color: $brandColor;
+            transform: scale(1.2);
         }
     }
 }

@@ -485,4 +485,5 @@ a {
 }
 .media__link:hover {
   background-color: #F16D7F;
+  transform: scale(1.2);
 }/*# sourceMappingURL=sass.css.map */
