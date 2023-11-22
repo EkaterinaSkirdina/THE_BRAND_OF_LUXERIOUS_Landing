@@ -11,6 +11,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 a {
@@ -42,7 +43,7 @@ a {
   justify-content: center;
   gap: 40px;
 }
-.header__logo-img:hover {
+.header__logo__img:hover {
   transform: scale(1.2);
 }
 .header__checkbox {
@@ -51,29 +52,19 @@ a {
   left: -9999999px;
 }
 .header__checkbox:checked ~ .menu-list {
-  visibility: visible;
   right: 0;
-}
-
-.fa-solid {
-  color: #fff;
-}
-.fa-solid:hover {
-  transform: scale(1.2);
-  cursor: pointer;
 }
 
 .menu-list {
   position: absolute;
-  top: 80px;
-  z-index: 1;
+  top: 79px;
+  right: -232px;
+  z-index: 9999;
   transition: right 0.6s;
   width: 232px;
   background: #FFFFFF;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   padding: 32px;
-  box-sizing: border-box;
-  visibility: hidden;
 }
 .menu-list__title {
   display: inline-block;
@@ -116,6 +107,14 @@ a {
 }
 .menu-list__link:hover {
   color: #F16D7F;
+}
+
+.fa-solid {
+  color: #fff;
+}
+.fa-solid:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 .main {
@@ -254,6 +253,10 @@ a {
   font-size: 13px;
   font-weight: 400;
   margin-bottom: 16px;
+  transition: color 0.2s;
+}
+.product__title:hover {
+  color: #F16D7F;
 }
 .product__text {
   color: #5D5D5D;
@@ -487,4 +490,172 @@ a {
 .media__link:hover {
   background-color: #F16D7F;
   transform: scale(1.2);
+}
+
+.breadcrumb {
+  background-color: #F8F3F4;
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+.breadcrumb__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.breadcrumb__name {
+  color: #F16D7F;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+}
+
+.breadcrumb__way a:not(:last-child)::after {
+  content: "/";
+  color: #636363;
+  margin-right: 2px;
+  padding-left: 5px;
+}
+
+.breadcrumb__way__link {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+  color: #636363;
+  transition: color 0.2s;
+}
+.breadcrumb__way__link:hover {
+  color: #222224;
+}
+
+.breadcrumb__way__current {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  color: #F16D7F;
+}
+
+.swiper {
+  min-height: 780px;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background-color: #F7F7F7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: #EAEAEA solid 1px;
+}
+.swiper-slide img {
+  display: block;
+  height: 780px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 25%;
+  max-height: 100%;
+}
+
+.description {
+  position: relative;
+  text-align: center;
+  border: #EAEAEA solid 1px;
+  padding: 65px 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 130px;
+  margin-top: -52px;
+  z-index: 2;
+  background-color: #FFF;
+}
+.description__subtitle {
+  color: #F16D7F;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+  padding-bottom: 15px;
+}
+.description__restungle {
+  height: 3px;
+  width: 63px;
+  background-color: #EF5B70;
+}
+.description__title {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 22px;
+  color: #222224;
+  padding-top: 15px;
+  padding-bottom: 50px;
+}
+.description__text {
+  color: #5E5E5E;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 0 43px 32px;
+}
+.description__price {
+  color: #EF5B70;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  padding: 0 290px 65px;
+  border-bottom: #EAEAEA solid 1px;
+  margin-bottom: 65px;
+}
+
+.sort {
+  display: flex;
+  gap: 23px;
+  margin-bottom: 48px;
+}
+.sort__summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sort__heading {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #6F6E6E;
+}
+
+.btn__add-to-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #FF6A6A;
+  border-radius: 7px;
+  width: 212px;
+  height: 48px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  gap: 22px;
+  color: #F26376;
+  transition: all 0.3s;
+}
+.btn__add-to-cart svg path {
+  fill: #F16D7F;
+}
+.btn__add-to-cart:hover {
+  box-shadow: 0 0 5px #5E5E5E;
+  background-color: #F16D7F;
+  color: #FFF;
+}
+.btn__add-to-cart:hover svg path {
+  fill: #FFF;
+}
+
+.product__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  gap: 30px;
+  margin-bottom: 128px;
 }/*# sourceMappingURL=sass.css.map */
