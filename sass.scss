@@ -16,14 +16,21 @@ body {
     overflow-x: hidden;
 }
 
+summary {
+    display: block;
+    cursor: pointer;
+}
+summary::-webkit-details-marker {
+    display: none;
+}
+
 a {
     text-decoration: none;
 }
 
 .container {
-    max-width: $widthContent;
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: calc(50% - $widthContent/2);
+    padding-right: calc(50% - $widthContent/2);
 }
 
 .header {
@@ -712,4 +719,178 @@ a {
     grid-template-columns: repeat(3, 360px);
     gap: 30px;
     margin-bottom: 128px;
+}
+
+
+//CATALOG
+
+.filter-sorting {
+    padding-top: 39px;
+    // padding-bottom: 65px;
+    height: 132px;
+    display: flex;
+    gap: 30px;
+    position: relative;
+}
+
+.filter {
+    width: 360px;
+    padding-top: 13px;
+    position: relative;
+    z-index: 10;
+            
+    
+    &__content {
+        background-color: #FFF;
+        padding: 0 16px 16px;
+        box-shadow: 6px 45px 35px rgba(0, 0, 0, 0.21);
+    }
+
+    &[open] {
+        background-color: #FFF;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);                
+    }
+
+    &[open] .filter__title {
+        color: $brandColor;
+    }
+
+    &[open] path {
+        fill: $brandColor;
+    }
+
+    &__summary {
+        display: flex;
+        align-items: center;
+        padding-left: 16px;
+    }
+
+    &__title {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 17px;
+        color: #000;
+        padding-right: 10px;
+    }
+
+    &__item {
+        margin-top: 16px;
+    }
+
+    &__heading {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        color: $darkTextBackground;
+        padding: 8px 11px 11px 11px;
+        border-bottom: 1px solid #EBEBEB;
+        border-left: 5px solid $brandColor;
+    }
+
+    &__link-box {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        padding: 24px 16px;
+    }
+
+    &__link {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        color: $darkTextBackground;
+        transition: all 0.3s;
+
+        &:hover {
+            color: $brandColor;
+        }
+    }
+
+    &__item[open] .filter__heading{
+        color: $brandColor;
+    }
+}
+
+.sorting {
+    padding-top: 12px;
+    display: flex;
+    gap: 28px;
+
+    &__details {
+        position: relative;
+    }
+
+    &__summary {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__heading {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        color: #6F6E6E;
+    }
+
+    &__box {
+        background: #FFF;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        padding: 7px 30px 11px 9px;
+        position: absolute;
+        left: -9px;
+        top: 20px;
+        gap: 8px;
+        display: flex;
+        flex-direction: column;
+        z-index: 999;
+    }
+
+    &__check {
+        display: flex;
+        gap: 9px;
+        align-items: center;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        color: #6F6E6E;
+    }
+}
+
+.pagination {
+    padding-top: 50px;
+    padding-bottom: 95px;
+    @include flexAlignment(center);
+
+    &__round {
+        height: 43px;
+        width: 283px;
+        border: 1px solid #EBEBEB;
+        @include flexAlignment(space-around);
+        transition: all .2s;
+
+        &:hover {
+            border: 1px solid #cacaca;
+            box-shadow: 6px 4px 30px rgba(185, 184, 184, 0.21);
+            cursor: pointer;
+        }
+    }
+
+    &__pages {
+        @include flexAlignment(space-between);
+        gap: 18px;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19px;
+        color: #C4C4C4;
+
+        &__current {
+            color: #EF5B70;
+        }
+    }
+
+    &__toggle:hover path {
+        fill: $brandColor;
+    }
 }
