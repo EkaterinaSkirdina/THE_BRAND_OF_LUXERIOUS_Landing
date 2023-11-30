@@ -376,7 +376,7 @@ a {
 .subscribe__block {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-bottom: 126px;
   padding-top: 97px;
 }
@@ -437,6 +437,11 @@ a {
   outline-color: #8a8888;
   background-color: #f7f4f4;
 }
+.subscribe__form__input__mail [placeholder] {
+  color: #222224;
+  font-size: 14px;
+  font-weight: 400;
+}
 .subscribe__form__input__btn {
   font-size: 14px;
   font-weight: 400;
@@ -455,19 +460,13 @@ a {
   cursor: pointer;
 }
 
-[placeholder] {
-  color: #222224;
-  font-size: 14px;
-  font-weight: 400;
-}
-
 .footer__media {
   background-color: #222224;
 }
 .footer__media__block {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: -14px;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -819,4 +818,187 @@ a {
 }
 .pagination__toggle:hover path {
   fill: #F16D7F;
+}
+
+.cart {
+  padding-top: 95px;
+  padding-bottom: 130px;
+  display: flex;
+  justify-content: space-between;
+}
+.cart__left {
+  max-width: 652px;
+}
+.cart__left__card-box {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 72px;
+}
+.card {
+  position: relative;
+  display: flex;
+  box-shadow: 17px 19px 24px 0px rgba(0, 0, 0, 0.1294117647);
+}
+.card__description {
+  padding: 22px 97px 62px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.card__description__title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  color: #222224;
+  margin-bottom: 40px;
+}
+.card__description__parameters {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #575757;
+}
+.card__description__parameters__value {
+  color: #6F6E6E;
+}
+.card__description__parameters input {
+  color: #6F6E6E;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  width: 48px;
+  padding-left: 10px;
+  outline-color: #c7c7c4;
+  border: #EAEAEA solid 1px;
+  text-align: center;
+  margin-left: 25px;
+}
+
+.exit {
+  position: absolute;
+  top: 28px;
+  right: 22px;
+  transition: all 0.3s;
+}
+.exit:hover path {
+  fill: #F16D7F;
+  cursor: pointer;
+}
+
+.buttons-box {
+  display: flex;
+  justify-content: space-between;
+}
+.buttons-box__btn {
+  padding: 16px 40px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+  color: #000;
+  border-color: #A4A4A4;
+  transition: all 0.3s;
+}
+.buttons-box__btn:hover {
+  color: #F16D7F;
+}
+
+.shipping-box {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 17px;
+  margin-bottom: 60px;
+}
+.shipping-box__heading {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  color: #222224;
+}
+.shipping-box__form {
+  width: 100%;
+  padding: 16px;
+  border-color: #A4A4A4;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 16px;
+  color: #222224;
+}
+.shipping-box__form::-moz-placeholder {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+.shipping-box__form::placeholder {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+.shipping-box__btn {
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 13px;
+  color: #4A4A4A;
+  padding: 12px 15px;
+  border-color: #4A4A4A;
+  cursor: pointer;
+  align-self: start;
+  transition: all 0.3s;
+}
+.shipping-box__btn:hover {
+  color: #F16D7F;
+}
+
+.checkout {
+  background-color: #F5F3F3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 40px;
+}
+.checkout__sub-total {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+  color: #4A4A4A;
+  margin-bottom: 12px;
+}
+.checkout__grand-total {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  color: #222224;
+  margin-bottom: 21px;
+}
+.checkout__grand-total .checkout__sum {
+  font-weight: 700;
+  color: #F16D7F;
+}
+.checkout__sum {
+  margin-left: 20px;
+}
+.checkout__btn-box {
+  padding-top: 17px;
+  border-top: 1px solid #E2E2E2;
+}
+.checkout__btn {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  padding: 16px 42px;
+  background-color: #F16D7F;
+  border-color: #F16D7F;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.checkout__btn:hover {
+  background-color: #FFF;
+  color: #F16D7F;
 }/*# sourceMappingURL=sass.css.map */
