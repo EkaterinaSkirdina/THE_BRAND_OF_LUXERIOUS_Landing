@@ -1025,6 +1025,11 @@ a {
             line-height: 16px;
             color: #B1B1B1;
         }
+
+        &:focus {
+            outline-color: #8a8888;
+            background-color: #f7f4f4;
+        }
     }
 
     &__btn {
@@ -1095,6 +1100,133 @@ a {
         &:hover {
             background-color: #FFF;
             color: $brandColor;
+        }
+    }
+}
+
+// REGISTRATION
+
+.registration {
+    padding-top: 64px;
+    padding-bottom: 96px;
+    display: flex;
+    justify-content: space-between;
+
+    &-box {
+        width: 360px;
+        
+    }
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__subtitle {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19px;
+        color: $darkTextBackground;
+    }
+
+    &__input {
+        width: 100%;
+        border-color: #A4A4A4;
+        padding: 15px 17px;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 16px;
+        color: $darkTextBackground;
+
+        &::placeholder {
+            font-size: 13px;
+            font-weight: 300;
+            line-height: 16px;
+            color: #B1B1B1;
+        }
+
+        &:focus {
+            outline-color: #8a8888;
+            background-color: #f7f4f4;
+        }
+    }
+
+    &__advice {
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 16px;
+        color: #B1B1B1;
+    }
+
+    &__btn {
+        margin-top: 40px;
+        padding: 16px 30px;
+        background-color: $brandColor;
+        color: #FFF;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover {
+            border: $brandColor solid 1px;
+            background-color: #fff;
+            color: $brandColor;
+        }
+
+        &:hover path {
+            fill: $brandColor;
+        }
+    }
+}
+
+.registration-gender {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    display: flex;
+    gap: 20px;
+
+    &__choice {
+        font-size: 11px;
+        font-weight: 300;
+        line-height: 13px;
+        color: $darkTextBackground;
+        display: inline-block;
+        margin-left: 10px;
+    }
+}
+
+.registration-loyalty {
+    width: 650px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    color: #000000;
+
+    &__title {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 25px;
+    }
+
+    &__subtitle {
+        margin-bottom: 22px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding-left: 40px;
+
+        & li {
+            list-style-image: url(img/check.svg);
+            padding-left: 20px;
         }
     }
 }

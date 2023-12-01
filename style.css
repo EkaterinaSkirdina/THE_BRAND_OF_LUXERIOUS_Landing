@@ -941,6 +941,10 @@ a {
   line-height: 16px;
   color: #B1B1B1;
 }
+.shipping-box__form:focus {
+  outline-color: #8a8888;
+  background-color: #f7f4f4;
+}
 .shipping-box__btn {
   font-size: 11px;
   font-weight: 300;
@@ -1002,4 +1006,120 @@ a {
 .checkout__btn:hover {
   background-color: #FFF;
   color: #F16D7F;
+}
+
+.registration {
+  padding-top: 64px;
+  padding-bottom: 96px;
+  display: flex;
+  justify-content: space-between;
+}
+.registration-box {
+  width: 360px;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.registration-form__subtitle {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  color: #222224;
+}
+.registration-form__input {
+  width: 100%;
+  border-color: #A4A4A4;
+  padding: 15px 17px;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 16px;
+  color: #222224;
+}
+.registration-form__input::-moz-placeholder {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+.registration-form__input::placeholder {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+.registration-form__input:focus {
+  outline-color: #8a8888;
+  background-color: #f7f4f4;
+}
+.registration-form__advice {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 16px;
+  color: #B1B1B1;
+}
+.registration-form__btn {
+  margin-top: 40px;
+  padding: 16px 30px;
+  background-color: #F16D7F;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.registration-form__btn:hover {
+  border: #F16D7F solid 1px;
+  background-color: #fff;
+  color: #F16D7F;
+}
+.registration-form__btn:hover path {
+  fill: #F16D7F;
+}
+
+.registration-gender {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  display: flex;
+  gap: 20px;
+}
+.registration-gender__choice {
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 13px;
+  color: #222224;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.registration-loyalty {
+  width: 650px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  color: #000000;
+}
+.registration-loyalty__title {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 25px;
+}
+.registration-loyalty__subtitle {
+  margin-bottom: 22px;
+}
+.registration-loyalty__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 40px;
+}
+.registration-loyalty__list li {
+  list-style-image: url(img/check.svg);
+  padding-left: 20px;
 }/*# sourceMappingURL=style.css.map */
