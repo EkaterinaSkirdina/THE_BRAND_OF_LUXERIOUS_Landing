@@ -40,8 +40,6 @@ a {
 
     &__row {
         @include flexAlignment(space-between);
-        padding-right: 2%;
-        padding-left: 2%;
     }
 
     &__logo {
@@ -143,6 +141,7 @@ a {
 
 .home {
     background: #F1E4E6;
+    margin-bottom: 65px;
 
     &__content {
         @include flexAlignment  (space-between);
@@ -159,7 +158,7 @@ a {
 
     &__right {
         @include flexAlignment(center);
-        gap: 10px;
+        gap: 16px;
         padding-right: 90px;
         
         &__restungle {
@@ -191,8 +190,7 @@ a {
 }
 
 .catalog {
-    padding-top: 65px;
-    padding-bottom: 95px;
+    margin-bottom: 95px;
 
     &__grid {
         display: grid;
@@ -537,6 +535,67 @@ a {
             background-color: $brandColor;
             transform: scale(1.2);
         }
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+
+    .container {
+        padding-left: calc(50% - $widthContentTablet/2);
+        padding-right: calc(50% - $widthContentTablet/2);
+    }
+
+    .home__left__img {
+        height: 100vh;
+    }
+
+    .title {
+        font-size: 44px;
+    }
+    .subtitle {
+        font-size: 24px;
+    }
+
+    .catalog {
+        margin-bottom: 155px;
+    
+        &__grid {
+            grid-template-columns: repeat(3, 232px);
+            gap: 20px;
+        }
+
+        &__item {
+            min-height: 167px;
+        }
+    }
+    .item-long {
+        min-height: 116px;
+    }
+
+    .fetured__grid {
+        grid-template-columns: repeat(2, 360px);
+        gap: 16px;
+    }
+
+    .fetured__button {
+        margin-top: 32px;
+        margin-bottom: 65px;
+    }
+        
+    .advantage {
+        padding-top: 48px;
+        padding-bottom: 65px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+    }
+
+    .subscribe__block {
+        padding-bottom: 140px;
+        padding-top: 65px;
+        flex-direction: column;
+        gap: 48px;
     }
 }
 

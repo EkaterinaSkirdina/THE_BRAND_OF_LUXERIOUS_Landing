@@ -42,8 +42,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-right: 2%;
-  padding-left: 2%;
 }
 .header__logo {
   display: flex;
@@ -131,6 +129,7 @@ a {
 
 .home {
   background: #F1E4E6;
+  margin-bottom: 65px;
 }
 .home__content {
   display: flex;
@@ -151,7 +150,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 16px;
   padding-right: 90px;
 }
 .home__right__restungle {
@@ -180,8 +179,7 @@ a {
 }
 
 .catalog {
-  padding-top: 65px;
-  padding-bottom: 95px;
+  margin-bottom: 95px;
 }
 .catalog__grid {
   display: grid;
@@ -499,6 +497,56 @@ a {
   transform: scale(1.2);
 }
 
+@media (max-width: 1024px) and (min-width: 768px) {
+  .container {
+    padding-left: calc(50% - 367.5px);
+    padding-right: calc(50% - 367.5px);
+  }
+  .home__left__img {
+    height: 100vh;
+  }
+  .title {
+    font-size: 44px;
+  }
+  .subtitle {
+    font-size: 24px;
+  }
+  .catalog {
+    margin-bottom: 155px;
+  }
+  .catalog__grid {
+    grid-template-columns: repeat(3, 232px);
+    gap: 20px;
+  }
+  .catalog__item {
+    min-height: 167px;
+  }
+  .item-long {
+    min-height: 116px;
+  }
+  .fetured__grid {
+    grid-template-columns: repeat(2, 360px);
+    gap: 16px;
+  }
+  .fetured__button {
+    margin-top: 32px;
+    margin-bottom: 65px;
+  }
+  .advantage {
+    padding-top: 48px;
+    padding-bottom: 65px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+  }
+  .subscribe__block {
+    padding-bottom: 140px;
+    padding-top: 65px;
+    flex-direction: column;
+    gap: 48px;
+  }
+}
 .breadcrumb {
   background-color: #F8F3F4;
   padding-top: 65px;
