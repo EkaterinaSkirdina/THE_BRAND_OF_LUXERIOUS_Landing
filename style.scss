@@ -599,7 +599,7 @@ a {
 
     &-slide img {
         display: block;
-        height: 780px;
+        // height: 780px;
         object-fit: cover;
         margin-left: auto;
         margin-right: auto;
@@ -1302,7 +1302,38 @@ a {
         gap: 48px;
     }
 
-        
+    //PRODUCT
+    .swiper {
+
+        &-slide {
+            height: 100vh;
+        }
+        &-wrapper {
+            height: 100vh;
+        }
+
+        &-slide img {
+            max-width: 40%;
+            height: 100vh;
+        }
+    }
+
+    .description {
+        margin-top: -226px;
+        border-left: none;
+        border-right: none;
+        padding: 65px 0;
+    }
+       
+    .product__grid {
+        grid-template-columns: repeat(2, 360px);
+        gap: 16px;        
+    }
+
+    .product:last-child {
+        display: none;
+    }
+    
 }
 
 @media (max-width: 767px) {
@@ -1390,6 +1421,7 @@ a {
 
         &__form__subtitle {
             font-size: 14px;
+            text-align: center;
         }
     }
 
@@ -1425,14 +1457,56 @@ a {
         &__summary {
             padding-left: 0;
         }
-    }
-
-    .sorting__heading {
-        font-size: 12px;
-        line-height: 14px;
-    }
+    }  
 
     .sorting {
         gap: 24px;
+
+        &__heading {
+        font-size: 12px;
+        line-height: 14px;
+        }
+    }
+
+
+    //PRODUCT
+
+    .swiper {
+        height: 100vh;
+
+        &-slide {
+            // height: 624px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-slide img {
+            height: 70%;
+            max-width: none;
+        }
+    }
+
+    .description {
+        margin-top: 0;
+        border-left: none;
+        border-right: none;
+        padding: 65px 0;
+
+        &__price {
+            padding: 0 150px 40px;
+            margin-bottom: 50px;
+        }
+        &__text {
+            padding: 0 20px 32px;
+        }
+    }
+
+    .product__grid {
+        grid-template-columns: repeat(1, 360px);
+        gap: 16px;        
+    }
+
+    .product:last-child {
+        display: none;
     }
 }
