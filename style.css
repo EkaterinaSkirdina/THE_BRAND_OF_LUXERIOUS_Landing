@@ -1224,6 +1224,16 @@ a {
   .buttons-box {
     justify-content: space-evenly;
   }
+  .registration-loyalty {
+    width: 360px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .registration-loyalty__title {
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
 @media (max-width: 767px) {
   .container {
@@ -1307,7 +1317,7 @@ a {
   .copy {
     order: 1;
   }
-  .breadcrumb {
+  .padding-min {
     padding-top: 25px;
     padding-bottom: 45px;
   }
@@ -1423,5 +1433,20 @@ a {
   }
   .checkout__btn {
     padding: 15px 39px;
+  }
+  .registration {
+    padding-top: 40px;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .registration-loyalty {
+    width: 360px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .registration-loyalty__title {
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 19px;
   }
 }/*# sourceMappingURL=style.css.map */

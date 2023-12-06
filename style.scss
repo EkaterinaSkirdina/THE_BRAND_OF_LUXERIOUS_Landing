@@ -1364,6 +1364,21 @@ a {
     .buttons-box {
         justify-content: space-evenly;
     }
+
+
+    //REGISTRATION
+
+    .registration-loyalty {
+        width: 360px;
+        font-size: 16px;
+        line-height: 19px;
+
+        &__title {
+            margin-bottom: 32px;
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
     
 }
 
@@ -1470,14 +1485,14 @@ a {
 
     //CATALOG
 
-    .breadcrumb {
+    .padding-min{
         padding-top: 25px;
-        padding-bottom: 45px;
+        padding-bottom: 45px;        
+    }
 
-        &__row {
-            flex-direction: column;
-            gap: 32px;
-        }
+    .breadcrumb__row {
+        flex-direction: column;
+        gap: 32px;
     }
 
     .filter {
@@ -1555,7 +1570,6 @@ a {
     .card {
         width: 360px;
         height: 188px;
-        // justify-content: flex-start;
 
         & img {
             width: 144px;
@@ -1627,4 +1641,26 @@ a {
         padding: 15px 39px;
         }
     }
+
+
+    //REGISTRATION
+
+    .registration {
+        padding-top: 40px;
+        flex-wrap: wrap;
+        gap: 40px;
+
+        &-loyalty {
+            width: 360px;
+            font-size: 16px;
+            line-height: 19px;
+    
+            &__title {
+                margin-bottom: 32px;
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+    }
+    
 }
