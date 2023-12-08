@@ -587,7 +587,6 @@ a {
 }
 
 .swiper {
-    min-height: 780px;
         
     &-slide {
     text-align: center;
@@ -599,11 +598,9 @@ a {
 
     &-slide img {
         display: block;
-        // height: 780px;
         object-fit: cover;
         margin-left: auto;
         margin-right: auto;
-        max-width: 25%;
         max-height: 100%;
       }
 }
@@ -618,7 +615,7 @@ a {
     flex-direction: column;
     align-items: center;
     margin-bottom: 130px;
-    margin-top: -52px;
+    margin-top: -55px;
     z-index: 2;
     background-color: #FFF;
 
@@ -726,7 +723,6 @@ a {
 
 .filter-sorting {
     padding-top: 39px;
-    // padding-bottom: 65px;
     height: 132px;
     display: flex;
     gap: 30px;
@@ -1319,7 +1315,7 @@ a {
     }
 
     .description {
-        margin-top: -226px;
+        margin-top: 0;
         border-left: none;
         border-right: none;
         padding: 65px 0;
@@ -1531,7 +1527,7 @@ a {
         &-slide img {
             height: 70%;
             max-width: none;
-            margin-top: 25%;
+            margin-top: 22%;
         }
     }
 
@@ -1539,6 +1535,7 @@ a {
         margin-top: 0;
         border-left: none;
         border-right: none;
+        border-top: none;
         padding: 65px 0;
 
         &__price {
