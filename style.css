@@ -285,7 +285,6 @@ a {
   filter: brightness(0.5);
 }
 .product:hover .product__add {
-  display: box;
   display: flex;
 }
 .product__add {

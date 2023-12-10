@@ -306,7 +306,7 @@ a {
     }
 
     &:hover .product__add {
-        display: box;
+        display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
     }
