@@ -373,19 +373,25 @@ a {
   position: relative;
   font-size: 0;
 }
+.subscribe::after {
+  content: "";
+  background-image: url(img/Layer_dekstop.png);
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
 .subscribe__block {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-bottom: 126px;
   padding-top: 97px;
-}
-.subscribe__background {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  opacity: 0.4;
-  z-index: -1;
 }
 
 .subscribe__review {
@@ -1168,6 +1174,21 @@ a {
     align-items: center;
     gap: 48px;
   }
+  .subscribe::after {
+    content: "";
+    background-image: url(img/Layer_tablet.png);
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .subscribe__block {
     padding-bottom: 140px;
     padding-top: 65px;
@@ -1286,6 +1307,21 @@ a {
     flex-wrap: wrap;
     flex-direction: column;
     gap: 46px;
+  }
+  .subscribe::after {
+    content: "";
+    background-image: url(img/Layer_mobile.png);
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .subscribe__block {
     padding-bottom: 110px;
