@@ -65,7 +65,7 @@ a {
 
 .menu-list {
     position: absolute;
-    top: 79px;
+    top: 80px;
     right: -250px;
     z-index: 9999;
     -webkit-transition: right 0.6s;
@@ -84,7 +84,7 @@ a {
         line-height: 17px;
         letter-spacing: 0em;
         text-align: left;
-        margin-bottom: 24px;
+        margin-bottom: 15px;
 
         &:hover {
             color: $brandColor;
@@ -99,6 +99,7 @@ a {
         letter-spacing: 0em;
         line-height: 17px;
         margin-bottom: 12px;
+        margin-top: 9px;
         text-align: left;
 
         &:hover {
@@ -106,10 +107,13 @@ a {
         }
     }
 
-    & li {
-        margin-left: 21px;
+    & li {        
         margin-bottom: 11px;
         list-style: none;
+    }
+
+    &__category li {
+        margin-left: 21px;
     }
 
     &__link {
@@ -302,7 +306,7 @@ a {
     }
 
     &:hover .product__add {
-        display: box;
+        display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
     }
